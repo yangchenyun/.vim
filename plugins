@@ -1,0 +1,64 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" P L U G I N S   O P T I O N S
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" CommandT
+noremap <leader>o <Esc>:CommandT<CR>
+noremap <leader>O <Esc>:CommandTFlush<CR>
+noremap <leader>m <Esc>:CommandTBuffer<CR>
+"let g:CommandTMaxHeight = 15
+"set wildignore+=*.o,*.obj,.git,*.pyc
+"noremap <leader>j :CommandT<cr>
+"noremap <leader>y :CommandTFlush<cr>
+
+" bufExplorer plugin
+let g:bufExplorerDefaultHelp=0
+let g:bufExplorerShowRelativePath=1
+map <leader>o :BufExplorer<cr>
+
+" Minibuffer plugin
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
+"let g:miniBufExplSplitBelow = 1
+"let g:miniBufExplUseSingleClick = 1
+"let g:miniBufExplVSplit = 25
+"let g:miniBufExplorerMoreThanOne = 2
+
+"let g:bufExplorerSortBy = "name"
+autocmd BufRead,BufNew :call UMiniBufExplorer
+map <leader>u :TMiniBufExplorer<cr>
+
+
+" CloseTag
+" Only load CloseTag dealing with html/xml file.
+autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
+autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
+
+" Vim grep
+let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
+set grepprg=/bin/grep\ -nH
+
+
+"Tag List
+let Tlist_Sort_Type = "name"
+let Tlist_Show_Menu = 1
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Show_One_File = 1
+let Tlist_Use_SingleClick = 1
+map <leader>t :Tlist<cr>
+map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+set tags+=~/.vim/tags/*
+
+"NERDTree
+let NERDTreeShowHidden = 1
+" open NERDTree on CWD
+map <leader>f :NERDTreeToggle%:p:h<cr>
+
+"NERDCommenter
+let NERDSpaceDelims = 1
+
+"Supertab
+" Let Supertab work with vim's builtin autocomplete
+let g:SuperTabDefaultCompletionType = "context"

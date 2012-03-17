@@ -1,0 +1,82 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" E D I T I N G   O P T I O N S
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax on       " turn on syntax highlighting
+set number      " show line numbers
+set showbreak=+ " display a + at the beginning of a wrapped line
+set showmatch   " flash the matching bracket on inserting a )]} etc
+set mat=2 "How many tenths of a second to blink
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+set whichwrap+=<,>,h,l
+
+""" FIXME: everything works as expected without these, I'm sure
+"""        that I'm just missing something
+"set cindent    " c-style language indentation
+set autoindent " automatically indent new lines
+set smartindent " automatically indent new lines
+
+set wrap "Wrap lines
+set linebreak
+set textwidth=500
+
+" for most code, use 4 space indents. specific filetypes are overridden
+" in filetypes.vimrc
+set softtabstop=4 " most of the time, we want a softtabstop of 4
+set tabstop=2     " display tabs as 4 characters wide
+set shiftwidth=2  " shift by 4 spaces when using >> and <<, etc
+set expandtab     " no tabs, just spaces kthx.
+set smarttab
+
+" Using autocmd for this allows it to be reset every time you open a
+" file, which keeps overrides from being persistent
+autocmd FileType * set softtabstop=4 tabstop=4 shiftwidth=4 expandtab
+
+set list                     " show whitespace
+set listchars=tab:»·,trail:· " show tabs and trailing spaces
+set listchars+=extends:»     " show a » when a line goes off the right
+                             " edge of the screen
+set listchars+=precedes:«    " show a « when a line goes off the left
+                             " edge of the screen
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" F O L D I N G   O P T I O N S
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set foldenable        " enable folding
+set foldmethod=indent " use the syntax definitions' folding
+set foldlevelstart=99 " start with all folds open when switching buffers
+set foldcolumn=3      " adds two columns of fold status on the left-hand
+                      " side of the screen
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" S E A R C H   O P T I O N S
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set hlsearch "Highlight search things
+set ignorecase " makes search patterns case-insensitive by default
+set smartcase  " overrides ignorecase when the pattern contains
+               " upper-case characters
+set incsearch  " incremental search. 'nuf said
+set magic "Set magic on, for regular expressions
+highlight MatchParen ctermbg=4
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" S W A P   A N D   U N D O   O P T I O N S
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Turn backup off, since most stuff is in SVN, git anyway...
+set nobackup
+set nowb
+set noswapfile
+
+"Persistent undo
+try
+  if MySys() == "windows"
+    set undodir=C:\Windows\Temp
+  else
+    set undodir=~/.vim/undodir
+  endif
+
+  set undofile
+catch
+endtry

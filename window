@@ -1,0 +1,71 @@
+" Enable 256 color support
+set t_Co=256
+
+" Enable line number
+set nu
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => VIM user interface
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set 7 lines to the curors - when moving vertical..
+set so=7
+
+set wildmenu " Turn on WiLd menu
+set wildmode=list:longest,full
+
+" set mouse=a
+
+set ruler "Always show current position
+set cmdheight=1 "The commandbar height
+set hid "Change buffer - without saving
+
+" Set backspace config
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+
+set ignorecase "Ignore case when searching
+set smartcase
+
+set hlsearch "Highlight search things
+
+set incsearch "Make search act like search in modern browsers
+set nolazyredraw "Don't redraw while executing macros
+
+set magic "Set magic on, for regular expressions
+
+set showmatch "Show matching bracets when text indicator is over them
+set mat=2 "How many tenths of a second to blink
+
+" No sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
+" Set off the other paren
+highlight MatchParen ctermbg=4
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Colors and Fonts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax enable "Enable syntax hl
+
+" Set font according to system
+if MySys() == "mac"
+  set gfn=Monaco:h12
+  set shell=/bin/bash
+elseif MySys() == "windows"
+  set gfn=Bitstream\ Vera\ Sans\ Mono:h10
+elseif MySys() == "linux"
+  set gfn=Consolas\ 11
+  "set gfn=Inconsolata\ 12
+  set gfw=WenQuanYi\ Micro\ Hei\ Mono\ 10
+  set shell=/bin/bash
+endif
+
+colorscheme wombat256
+"colorscheme molokai
+
+
+set ffs=unix,dos,mac "Default file types

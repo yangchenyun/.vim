@@ -1,0 +1,13 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Sets the default encoding
+set fencs=utf-8,gb2312,gbk,big5
+
+" Sets how many lines of history VIM has to remember
+set history=700
+
+set nocompatible
+set wildmenu " Turn on WiLd menu
+set wildmode=list:longest,full
+set modelines=1

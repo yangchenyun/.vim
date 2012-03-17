@@ -1,0 +1,51 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" F I L E T Y P E   O P T I O N S
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" use filetype plugins to determine indent settings
+filetype plugin indent on
+
+" Default file types
+set ffs=unix,dos,mac
+
+" ruby and yaml files are indented by two
+autocmd FileType ruby,rdoc,cucumber,yaml set softtabstop=2 tabstop=2 shiftwidth=2
+
+" Gemfile, Isolate, Vagrantfile and config.ru are ruby
+autocmd BufNewFile,BufRead Gemfile     setfiletype ruby
+autocmd BufNewFile,BufRead Isolate     setfiletype ruby
+autocmd BufNewFile,BufRead Vagrantfile setfiletype ruby
+autocmd BufNewFile,BufRead config.ru   setfiletype ruby
+
+" set up compiler for ruby files
+autocmd FileType ruby compiler ruby
+
+" don't show whitespace in help files
+autocmd FileType help set nolist
+
+" twiki files
+autocmd BufNewFile,BufRead *.twiki set filetype=twiki
+
+" set filetype on config files for vim, mutt, and bash
+autocmd BufNewFile,BufRead ~/.vim/*  setfiletype vim
+autocmd BufNewFile,BufRead ~/.mutt/* setfiletype muttrc
+autocmd BufNewFile,BufRead ~/.bash/* setfiletype sh
+
+" lighttpd Configuration File
+autocmd BufRead,BufNewFile /etc/lighttpd/* setfiletype lighttpd
+autocmd BufRead,BufNewFile lighttpd.conf setfiletype lighttpd
+
+" Yaml section
+autocmd BufRead,BufNewFile *.yml setfiletype yaml
+
+" Nginx section
+autocmd BufRead,BufNewFile /etc/nginx/* setfiletype nginx
+autocmd BufRead,BufNewFile /usr/local/etc/nginx/* setfiletype nginx
+
+
+autocmd FileType c map <buffer> <leader><space> :w<cr>:!gcc %<cr>
+autocmd FileType javascript map <buffer> <leader><space> :w!<cr>:!d8 %<cr>
+autocmd FileType php map <buffer> <leader><space> :w!<cr>:!php -f %<cr>
+autocmd FileType python map <buffer> <leader><space> :w!<cr>:!python %<cr>
+autocmd FileType ruby map <buffer> <leader><space> :w!<cr>:!ruby %<cr>
+autocmd FileType sh map <buffer> <leader><space> :w!<cr>:!bash %<cr>
+autocmd FileType vim map <buffer> <leader><space> :w!<cr>:source %<cr>

@@ -23,7 +23,7 @@ set textwidth=500
 
 " for most code, use 4 space indents. specific filetypes are overridden
 " in filetypes.vimrc
-set softtabstop=4 " most of the time, we want a softtabstop of 4
+set softtabstop=2 " most of the time, we want a softtabstop of 4
 set tabstop=2     " display tabs as 4 characters wide
 set shiftwidth=2  " shift by 4 spaces when using >> and <<, etc
 set expandtab     " no tabs, just spaces kthx.
@@ -31,7 +31,7 @@ set smarttab
 
 " Using autocmd for this allows it to be reset every time you open a
 " file, which keeps overrides from being persistent
-autocmd FileType * set softtabstop=4 tabstop=4 shiftwidth=4 expandtab
+autocmd FileType * set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
 
 set list                     " show whitespace
 set listchars=tab:»·,trail:· " show tabs and trailing spaces

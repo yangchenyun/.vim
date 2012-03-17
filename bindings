@@ -3,7 +3,8 @@
 let mapleader = ","
 let g:mapleader = ","
 
-inoremap jj <Esc> "Map jj to escape
+" Map jj to escape
+inoremap jj <Esc>
 
 " Fast saving
 nmap <leader>w :w!<cr>

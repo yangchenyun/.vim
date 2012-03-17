@@ -1,12 +1,12 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ G U I   O P T I O N S
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-colorscheme solarized  " use a nice 256-color scheme in the gui
+colorscheme wombat256  " use a nice 256-color scheme in the gui
 set mouse=a                 " use mouse when possible
-" set guifont=Inconsolata:h20 " Inconsolata, 16pt high
+set guifont=Menlo\ Regular:h12 " Inconsolata, 16pt high
 set antialias
 " set default window size
-set columns=100 lines=25
+set columns=120 lines=35
 
 " GUI option string.  Values:
 "   a: visual-mode selections go to the clipboard
@@ -15,7 +15,7 @@ set columns=100 lines=25
 "   e: use GUI tab bar instead of text tab bar
 "   T: Include the Toolbar
 "   r: Right-hand scrollbar 
-set guioptions=aAce
+set guioptions=aAc
 set guioptions-=T
 set guioptions-=r
 

@@ -10,9 +10,6 @@ set background=light
 colorscheme solarized
 set mouse=a                 " use mouse when possible
 
-let g:solarized_visibility=et mouse=a                 " use mouse when possible
-
-colorscheme solarizedket mouse=a                 " use mouse when possible
 set guifont=Menlo\ Regular:h12 " Inconsolata, 16pt high
 set antialias
 " set default window size

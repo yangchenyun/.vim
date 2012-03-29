@@ -11,3 +11,71 @@ set nocompatible
 set wildmenu " Turn on WiLd menu
 set wildmode=list:longest,full
 set modelines=1
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Utilities
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+fun! MySys()
+  return "windows"
+endfun
+
+" Used in Status Bar Display
+function! CurDir()
+  let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
+  return curdir
+endfunction
+
+function! HasPaste()
+  if &paste
+      return 'PASTE MODE  '
+  else
+      return ''
+  endif
+endfunction
+
+func! Cwd()
+  let cwd = getcwd()
+  return "e " . cwd
+endfunc
+
+func! CurrentFileDir(cmd)
+  return a:cmd . " " . expand("%:p:h") . "/"
+endfunc
+
+func! DeleteTillSlash()
+  let g:cmd = getcmdline()
+  if MySys() == "linux" || MySys() == "mac"
+    let g:cmd_edited = substitute(g:cmd, "\\(.*\[/\]\\).*", "\\1", "")
+  else
+    let g:cmd_edited = substitute(g:cmd, "\\(.*\[\\\\]\\).*", "\\1", "")
+  endif
+  if g:cmd == g:cmd_edited
+    if MySys() == "linux" || MySys() == "mac"
+      let g:cmd_edited = substitute(g:cmd, "\\(.*\[/\]\\).*/", "\\1", "")
+    else
+      let g:cmd_edited = substitute(g:cmd, "\\(.*\[\\\\\]\\).*\[\\\\\]", "\\1", "")
+    endif
+  endif
+  return g:cmd_edited
+endfunc
+
+function! CmdLine(str)
+  exe "menu Foo.Bar :" . a:str
+  emenu Foo.Bar
+  unmenu Foo
+endfunction
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Misc Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" No sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
+" When vimrc is edited, reload it
+autocmd! bufwritepost vimrc source ~/.vim/vimrc

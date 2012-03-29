@@ -19,11 +19,9 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-source $HOME/.vim/utility
 source $HOME/.vim/basic
 source $HOME/.vim/bindings
-source $HOME/.vim/plugins
 source $HOME/.vim/window
 source $HOME/.vim/editing
 source $HOME/.vim/filetypes
-source $HOME/.vim/misc
+source $HOME/.vim/plugins

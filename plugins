@@ -1,15 +1,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ P L U G I N S   O P T I O N S
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" CommandT
-noremap <leader>o <Esc>:CommandT<CR>
-noremap <leader>O <Esc>:CommandTFlush<CR>
-noremap <leader>m <Esc>:CommandTBuffer<CR>
-"let g:CommandTMaxHeight = 15
-"set wildignore+=*.o,*.obj,.git,*.pyc
-"noremap <leader>j :CommandT<cr>
-"noremap <leader>y :CommandTFlush<cr>
-
 " bufExplorer plugin
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
@@ -29,7 +20,6 @@ let g:miniBufExplModSelTarget = 1
 autocmd BufRead,BufNew :call UMiniBufExplorer
 map <leader>u :TMiniBufExplorer<cr>
 
-
 " CloseTag
 " Only load CloseTag dealing with html/xml file.
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
@@ -38,7 +28,6 @@ autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bu
 " Vim grep
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/bin/grep\ -nH
-
 
 "Tag List
 let Tlist_Sort_Type = "name"
@@ -62,3 +51,29 @@ let NERDSpaceDelims = 1
 "Supertab
 " Let Supertab work with vim's builtin autocomplete
 let g:SuperTabDefaultCompletionType = "context"
+
+"Vim Session
+" don't restore help windows
+set sessionoptions-=help
+
+" Don't persist options and mappings because it can corrupt sessions.
+set sessionoptions-=options
+
+" Always persist Vim's window size.
+set sessionoptions+=resize
+
+" Also save tabs
+set sessionoptions+=tabpages
+
+" The session_directory
+let g:session_directory = "~/.vim_session/"
+
+let g:session_autoload = "yes"
+let g:session_autosave = "no"
+
+" Restore the last used session
+let g:session_default_to_last = 1
+
+" vim ruby/rails/rspec/jquery api doc settings
+let g:jquery_doc_command='open'
+let g:ruby_doc_command='open'

@@ -46,9 +46,8 @@ set listchars+=precedes:«    " show a « when a line goes off the left
 set foldenable        " enable folding
 set foldmethod=indent " use the syntax definitions' folding
 set foldlevelstart=99 " start with all folds open when switching buffers
-set foldcolumn=0     " adds two columns of fold status on the left-hand
-                      " side of the screen
-
+set foldcolumn=0     " adds two columns of fold status on the left-hand side of the screen
+set foldlevel=20 " auto open folds when open files
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ S E A R C H   O P T I O N S
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

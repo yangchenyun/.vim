@@ -9,6 +9,9 @@ inoremap jj <Esc>
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" Switch to sudoer within the vim file
+cmap w!! w !sudo tee % >/dev/null
+
 " Fast editing of the .vimrc
 map <leader>v :e! ~/.vim/vimrc<cr>
 
@@ -38,6 +41,10 @@ if MySys() == "mac"
   vmap <D-k> <M-k>
 endif
 
+" Insert blank line in normal mode
+map <Enter> o<ESC>
+map <S-Enter> O<ESC>
+
 " Do :help cope if you are unsure what cope is. It's super useful!
 map <leader>cc :botright cope<cr>
 map <leader>n :cn<cr>
@@ -49,7 +56,8 @@ map <leader>n :cn<cr>
 " Map space to / (search) and c-space to ? (backgwards search)
 map <space> /
 map <c-space> ?
-map <silent> <leader><cr> :noh<cr>
+" Clear highlight of last search
+map <silent> <leader>/ :noh<cr>
 
 " Smart way to move btw. windows
 map <C-j> <C-W>j

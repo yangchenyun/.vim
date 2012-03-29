@@ -1,6 +1,3 @@
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
 [submodule "bundle/delmitmate"]
 	path = bundle/delmitmate
 	url = git://github.com/Raimondi/delimitMate.git
@@ -37,9 +34,6 @@
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
-[submodule "bundle/vim-css-color"]
-	path = bundle/vim-css-color
-	url = git://github.com/skammer/vim-css-color.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/ujihisa/vim-markdown.git

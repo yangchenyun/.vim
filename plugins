@@ -101,4 +101,3 @@ let g:ctrlp_custom_ignore = {
 
 " Zoomwin binding
 map <leader>zw :ZoomWin<cr>
-

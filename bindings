@@ -136,10 +136,6 @@ map <leader>cd :lcd %:h<CR>
 
 "toggles wrap
 nmap <leader>tw :set invwrap<CR>:set wrap?<CR>
-" underlines the current line with =
-nmap <leader>ul :t.|s/./=/g|:nohls<CR> 
-" finds the next conflict marker (tested with Git conflicted files)
-nmap <leader>fc <Esc>/\v^[<=>]{7}( .*|$)<CR> 
 " toggle highlight search
 nmap <leader>hs :set hlsearch! hlsearch?<CR>
 " adjust viewports to the same size
@@ -157,3 +153,11 @@ map <Down> gj
 
 " use <F4> to toggle paste mode
 nmap <F4> :set invpaste<CR>:set paste?<CR> 
+
+" FIXME: not working properly
+" E486: Pattern not found: .
+" E492: Not an editor command: $)<CR>
+" underlines the current line with =
+" nmap <leader>ul :t.|s/./=/g|:nohls<CR>
+" finds the next conflict marker (tested with Git conflicted files)
+" nmap <leader>fc <Esc>/\v^[<=>]{7}( .*|$)<CR>

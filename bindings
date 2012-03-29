@@ -1,3 +1,6 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" B I N D I N G S
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 let mapleader = ","
@@ -35,10 +38,10 @@ vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
 vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 if MySys() == "mac"
-  nmap <D-j> <M-j>
-  nmap <D-k> <M-k>
-  vmap <D-j> <M-j>
-  vmap <D-k> <M-k>
+map nmap <D-j> <M-j>
+map nmap <D-k> <M-k>
+map vmap <D-j> <M-j>
+map vmap <D-k> <M-k>
 endif
 
 " Insert blank line in normal mode
@@ -123,9 +126,34 @@ cno $c e <C-\>eCurrentFileDir("e")<cr>
 " $q is super useful when browsing on the command line
 cno $q <C-\>eDeleteTillSlash()<cr>
 
+" about file openings
+map <leader>et :tabe %%
+map <leader>ev :vsp %%
+map <leader>es :sp %%
+map <leader>ew :e %%
+map <leader>md :!mkdir -p %:p:h<CR>
+map <leader>cd :lcd %:h<CR>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Abbrevs
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
+"toggles wrap
+nmap <leader>tw :set invwrap<CR>:set wrap?<CR>
+" underlines the current line with =
+nmap <leader>ul :t.|s/./=/g|:nohls<CR> 
+" finds the next conflict marker (tested with Git conflicted files)
+nmap <leader>fc <Esc>/\v^[<=>]{7}( .*|$)<CR> 
+" toggle highlight search
+nmap <leader>hs :set hlsearch! hlsearch?<CR>
+" adjust viewports to the same size
+map <leader>= <C-W>= 
 
+" uppercase / lowercase convert
+nmap <leader>L mQgewvu`Q
+nmap <leader>U mQgewvU`Q
+nmap <leader>l mQviwu`Q
+nmap <leader>u mQviwU`Q 
+
+" Remap <Down> and <Up> to gj and gk
+map <Up> gk
+map <Down> gj
+
+" use <F4> to toggle paste mode
+nmap <F4> :set invpaste<CR>:set paste?<CR> 

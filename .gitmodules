@@ -52,6 +52,6 @@
 [submodule "bundle/vim-snipmate-snippets"]
 	path = bundle/vim-snipmate-snippets
 	url = https://github.com/honza/snipmate-snippets.git
-[submodule "ctrlp"]
-	path = ctrlp
-	url = git://github.com/kien/ctrlp.vim.git
+[submodule "bundle/vim-buffergator"]
+	path = bundle/vim-buffergator
+	url = git://github.com/jeetsukumaran/vim-buffergator.git

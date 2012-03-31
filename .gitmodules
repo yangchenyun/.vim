@@ -67,3 +67,9 @@
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = git://github.com/yangchenyun/snipmate-snippets.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = git://github.com/vim-scripts/matchit.zip.git
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git

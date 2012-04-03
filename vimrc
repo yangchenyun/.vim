@@ -16,6 +16,8 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " load up everything in ~/.vim/bundle using pathogen.vim
+set nocp 
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 

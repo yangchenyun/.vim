@@ -78,7 +78,7 @@ set sessionoptions+=tabpages
 " The session_directory
 let g:session_directory = "~/.vim_session/"
 
-let g:session_autoload = "yes"
+let g:session_autoload = "no"
 let g:session_autosave = "no"
 
 " Restore the last used session

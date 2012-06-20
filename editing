@@ -1,4 +1,5 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 """ E D I T I N G   O P T I O N S
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on       " turn on syntax highlighting
@@ -33,7 +34,7 @@ set smarttab
 " file, which keeps overrides from being persistent
 autocmd FileType * set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
 
-set list                     " show whitespace
+set nolist                     " show whitespace
 set listchars=tab:»·,trail:· " show tabs and trailing spaces
 set listchars+=extends:»     " show a » when a line goes off the right
                              " edge of the screen

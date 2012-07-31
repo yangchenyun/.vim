@@ -102,8 +102,8 @@ let g:ctrlp_working_path_mode = 2
 " exclude files or directory from search
 " with vim script regexp, needs to escape |, + as well
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|node_modules$',
-  \ 'file': '\.exe$\|\.so$\|\.dll$\',
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|node_modules$\|vendor$',
+  \ 'file': '\.exe$\|\.so$\|\.dll$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
 

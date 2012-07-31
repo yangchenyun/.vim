@@ -9,8 +9,7 @@ let g:solarized_visibility="high"
 set background=light
 colorscheme solarized
 set mouse=a                 " use mouse when possible
-
-set guifont=Menlo\ Regular:h12 " Inconsolata, 16pt high
+set guifont=Menlo\ Regular:h12
 set antialias
 " set default window size
 set columns=120 lines=35
@@ -21,7 +20,7 @@ set columns=120 lines=35
 "   c: don't pop up windows; use the console for dialog boxes and such
 "   e: use GUI tab bar instead of text tab bar
 "   T: Include the Toolbar
-"   r: Right-hand scrollbar 
+"   r: Right-hand scrollbar
 set guioptions=aAc
 set guioptions-=T
 set guioptions-=r

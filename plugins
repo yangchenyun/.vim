@@ -113,3 +113,10 @@ let g:ctrlp_custom_ignore = {
 "========== Zoomwin binding ==========
 
 map <leader>zw :ZoomWin<cr>
+
+"========== Powerline plugin ==========
+set laststatus=2
+let g:Powerline_colorscheme = 'default'
+let g:Powerline_symbols = 'fancy'
+"Shows a segment indicating that the current buffer has trailing white spaces.
+call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')

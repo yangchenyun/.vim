@@ -41,6 +41,10 @@ set listchars+=extends:»     " show a » when a line goes off the right
 set listchars+=precedes:«    " show a « when a line goes off the left
                              " edge of the screen
 
+                             
+" removing trailing spaces before saving
+autocmd FileType c,cpp,java,php,coffee,javascript,ruby,python,yaml,sh autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ F O L D I N G   O P T I O N S
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

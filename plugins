@@ -78,7 +78,7 @@ set sessionoptions+=tabpages
 " The session_directory
 let g:session_directory = "~/.vim_session/"
 
-let g:session_autoload = "yes"
+let g:session_autoload = "no"
 let g:session_autosave = "no"
 
 " Restore the last used session
@@ -100,16 +100,24 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_working_path_mode = 2
 
 " exclude files or directory from search
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
+" with vim script regexp, needs to escape |, + as well
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|node_modules$\|vendor$',
   \ 'file': '\.exe$\|\.so$\|\.dll$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store " MacOSX/Linux
 " use custom file listing command
 " let g:ctrlp_user_command = 'find %s -type f'
 
 "========== Zoomwin binding ==========
 
 map <leader>zw :ZoomWin<cr>
+
+"========== Powerline plugin ==========
+set laststatus=2
+let g:Powerline_colorscheme = 'default'
+let g:Powerline_symbols = 'fancy'
+"Shows a segment indicating that the current buffer has trailing white spaces.
+call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')

@@ -2,7 +2,7 @@
 set laststatus=2
 
 " Format the statusline
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
+" set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 
 " Set 7 lines to the curors - when moving vertical..
 set so=7
@@ -22,10 +22,10 @@ set t_Co=256
 
 " Set font according to system
 if MySys() == "mac"
-  set gfn=Monaco:h12
+  set gfn=Monaco-Powerline:h12
   set shell=/bin/bash
 elseif MySys() == "windows"
-  set gfn=Bitstream\ Vera\ Sans\ Mono:h10
+  " set gfn=Bitstream\ Vera\ Sans\ Mono:h10
 elseif MySys() == "linux"
   set gfn=Consolas\ 11
   "set gfn=Inconsolata\ 12

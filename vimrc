@@ -18,12 +18,15 @@
 " load up everything in ~/.vim/bundle using pathogen.vim
 set nocp
 filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
 
 source $HOME/.vim/basic
 source $HOME/.vim/bindings
 source $HOME/.vim/window
 source $HOME/.vim/editing
 source $HOME/.vim/filetypes
+source $HOME/.vim/vundle
 source $HOME/.vim/plugins

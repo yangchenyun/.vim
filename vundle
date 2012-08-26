@@ -1,0 +1,53 @@
+" utils
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "mattn/webapi-vim"
+Bundle "Lokaltog/vim-powerline"
+
+" language support
+  " Ruby
+Bundle "vim-ruby/vim-ruby"
+Bundle "tpope/vim-rails"
+
+  " javaScript
+Bundle "vim-coffee-script"
+Bundle "pangloss/vim-javascript"
+
+  " HTML
+Bundle "tpope/vim-haml"
+Bundle "tpope/vim-markdown"
+Bundle "juvenn/mustache.vim"
+
+  " StyleSheets
+Bundle "groenewege/vim-less"
+
+" editing
+Bundle "scrooloose/nerdcommenter"
+Bundle "YankRing.vim"
+
+" auto-completion & snippets
+Bundle "honza/snipmate-snippets"
+Bundle "garbas/vim-snipmate"
+Bundle "tpope/vim-surround"
+Bundle "Raimondi/delimitMate"
+Bundle "closetag.vim"
+Bundle "matchit.zip"
+Bundle "mattn/zencoding-vim"
+Bundle "tpope/vim-endwise"
+
+" doc nav
+Bundle "scrooloose/nerdtree"
+Bundle "kien/ctrlp.vim"
+Bundle "ZoomWin"
+Bundle "xolox/vim-session"
+Bundle "mileszs/ack.vim"
+Bundle "ervandew/supertab"
+
+" file nav
+Bundle "Lokaltog/vim-easymotion"
+Bundle "jeetsukumaran/vim-buffergator"
+Bundle "bufexplorer.zip"
+
+" git and github
+Bundle "mattn/gist-vim"
+Bundle "tpope/vim-fugitive"

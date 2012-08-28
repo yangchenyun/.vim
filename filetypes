@@ -25,6 +25,10 @@ autocmd FileType help set nolist
 " twiki files
 autocmd BufNewFile,BufRead *.twiki set filetype=twiki
 
+" markdown files
+autocmd BufNewFile,BufRead *.markdown set filetype=markdown
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+
 " set filetype on config files for vim, mutt, and bash
 autocmd BufNewFile,BufRead ~/.vim/*  setfiletype vim
 autocmd BufNewFile,BufRead ~/.mutt/* setfiletype muttrc

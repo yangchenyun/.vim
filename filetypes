@@ -22,9 +22,6 @@ autocmd FileType ruby compiler ruby
 " don't show whitespace in help files
 autocmd FileType help set nolist
 
-" twiki files
-autocmd BufNewFile,BufRead *.twiki set filetype=twiki
-
 " markdown files
 autocmd BufNewFile,BufRead *.markdown set filetype=markdown
 autocmd BufNewFile,BufRead *.md set filetype=markdown

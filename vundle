@@ -23,7 +23,7 @@ Bundle "groenewege/vim-less"
 
 " editing
 Bundle "scrooloose/nerdcommenter"
-Bundle "YankRing.vim"
+" Bundle "YankRing.vim"
 
 " auto-completion & snippets
 Bundle "honza/snipmate-snippets"
@@ -46,7 +46,7 @@ Bundle "ervandew/supertab"
 " file nav
 Bundle "Lokaltog/vim-easymotion"
 Bundle "jeetsukumaran/vim-buffergator"
-Bundle "bufexplorer.zip"
+" Bundle "bufexplorer.zip"
 
 " git and github
 Bundle "mattn/gist-vim"

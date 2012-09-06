@@ -121,3 +121,9 @@ let g:Powerline_colorscheme = 'default'
 let g:Powerline_symbols = 'fancy'
 "Shows a segment indicating that the current buffer has trailing white spaces.
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
+
+"========== Dash Interface ==========
+nmap <leader>dn :silent !open dash://nodejs:<cword><cr>
+nmap <leader>dj :silent !open dash://javascript:<cword><cr>
+nmap <leader>drb :silent !open dash://ruby:<cword><cr>
+nmap <leader>dra :silent !open dash://rails:<cword><cr>

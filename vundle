@@ -21,6 +21,9 @@ Bundle "juvenn/mustache.vim"
   " StyleSheets
 Bundle "groenewege/vim-less"
 
+  " Rdoc
+Bundle "RDoc"
+
 " editing
 Bundle "scrooloose/nerdcommenter"
 Bundle "Align"

@@ -23,7 +23,7 @@ Bundle "groenewege/vim-less"
 
 " editing
 Bundle "scrooloose/nerdcommenter"
-" Bundle "YankRing.vim"
+Bundle "Align"
 
 " auto-completion & snippets
 Bundle "honza/snipmate-snippets"

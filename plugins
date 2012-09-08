@@ -123,12 +123,6 @@ let g:Powerline_symbols = 'fancy'
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
 "========== Fugitive ==========
-" use .. to travel up the tree
-autocmd User fugitive
-  \ if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' |
-  \   nnoremap <buffer> .. :edit %:h<CR> |
-  \ endif
-
 " auto delete the fugitive object buff
 autocmd BufReadPost fugitive://* set bufhidden=delete
 

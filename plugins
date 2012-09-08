@@ -122,6 +122,16 @@ let g:Powerline_symbols = 'fancy'
 "Shows a segment indicating that the current buffer has trailing white spaces.
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
+"========== Fugitive ==========
+" use .. to travel up the tree
+autocmd User fugitive
+  \ if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' |
+  \   nnoremap <buffer> .. :edit %:h<CR> |
+  \ endif
+
+" auto delete the fugitive object buff
+autocmd BufReadPost fugitive://* set bufhidden=delete
+
 "========== Dash Interface ==========
 nmap <leader>dn :silent !open dash://nodejs:<cword><cr>
 nmap <leader>dj :silent !open dash://javascript:<cword><cr>

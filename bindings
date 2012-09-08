@@ -154,6 +154,11 @@ map <Down> gj
 " use <F4> to toggle paste mode
 nmap <F4> :set invpaste<CR>:set paste?<CR> 
 
+" shortcuts for diffget, diffput and diffupdate
+map <leader>dp :diffput<cr>
+map <leader>dg :diffget<cr>
+map <leader>du :diffupdate<cr>
+
 " FIXME: not working properly
 " E486: Pattern not found: .
 " E492: Not an editor command: $)<CR>

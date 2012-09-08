@@ -27,6 +27,7 @@ Bundle "RDoc"
 " editing
 Bundle "scrooloose/nerdcommenter"
 Bundle "Align"
+Bundle "tpope/vim-unimpaired"
 
 " auto-completion & snippets
 Bundle "honza/snipmate-snippets"

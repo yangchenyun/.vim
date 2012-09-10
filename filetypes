@@ -28,8 +28,10 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 
 " set filetype on config files for vim, mutt, and bash
 autocmd BufNewFile,BufRead ~/.vim/*  setfiletype vim
+autocmd BufNewFile,BufRead .vim* setfiletype vim
 autocmd BufNewFile,BufRead ~/.mutt/* setfiletype muttrc
 autocmd BufNewFile,BufRead ~/.bash/* setfiletype sh
+autocmd BufNewFile,BufRead ~/.pentadactyl/*  setfiletype vim
 
 " lighttpd Configuration File
 autocmd BufRead,BufNewFile /etc/lighttpd/* setfiletype lighttpd

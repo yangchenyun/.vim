@@ -28,6 +28,7 @@ Bundle "RDoc"
 Bundle "scrooloose/nerdcommenter"
 Bundle "Align"
 Bundle "tpope/vim-unimpaired"
+Bundle "laktek/distraction-free-writing-vim"
 
 " auto-completion & snippets
 Bundle "honza/snipmate-snippets"

@@ -17,6 +17,7 @@ Bundle "pangloss/vim-javascript"
 Bundle "tpope/vim-haml"
 Bundle "tpope/vim-markdown"
 Bundle "juvenn/mustache.vim"
+Bundle "closetag.vim"
 
   " StyleSheets
 Bundle "groenewege/vim-less"

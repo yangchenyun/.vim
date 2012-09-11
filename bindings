@@ -9,6 +9,10 @@ let g:mapleader = ","
 " Map jj to escape
 inoremap jj <Esc>
 
+" Map H, L to nav tabs
+map L gt
+map H gT
+
 " Fast saving
 nmap <leader>w :w!<cr>
 

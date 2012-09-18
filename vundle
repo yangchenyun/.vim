@@ -3,6 +3,8 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "mattn/webapi-vim"
 Bundle "Lokaltog/vim-powerline"
+Bundle "TailMinusF"
+Bundle "dbext.vim"
 
 " language support
   " Ruby
@@ -30,6 +32,7 @@ Bundle "scrooloose/nerdcommenter"
 Bundle "Align"
 Bundle "tpope/vim-unimpaired"
 Bundle "laktek/distraction-free-writing-vim"
+Bundle "tpope/vim-abolish"
 
 " auto-completion & snippets
 Bundle "honza/snipmate-snippets"

@@ -49,8 +49,8 @@ map vmap <D-k> <M-k>
 endif
 
 " Insert blank line in normal mode
-map <Enter> o<ESC>
-map <S-Enter> O<ESC>
+" map <Enter> o<ESC>
+" map <S-Enter> O<ESC>
 
 " Do :help cope if you are unsure what cope is. It's super useful!
 map <leader>cc :botright cope<cr>

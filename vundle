@@ -10,6 +10,7 @@ Bundle "dbext.vim"
   " Ruby
 Bundle "vim-ruby/vim-ruby"
 Bundle "tpope/vim-rails"
+Bundle "tpope/vim-bundler"
 
   " javaScript
 Bundle "vim-coffee-script"
@@ -27,12 +28,16 @@ Bundle "groenewege/vim-less"
   " Rdoc
 Bundle "RDoc"
 
+  " Jade
+Bundle 'digitaltoad/vim-jade'
+
 " editing
 Bundle "scrooloose/nerdcommenter"
 Bundle "Align"
 Bundle "tpope/vim-unimpaired"
 Bundle "laktek/distraction-free-writing-vim"
 Bundle "tpope/vim-abolish"
+Bundle "Syntastic"
 
 " auto-completion & snippets
 Bundle "honza/snipmate-snippets"

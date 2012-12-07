@@ -163,6 +163,9 @@ map <leader>dp :diffput<cr>
 map <leader>dg :diffget<cr>
 map <leader>du :diffupdate<cr>
 
+" toggle QuickFix List
+map <silent> <leader>m :QFix<cr>
+
 " FIXME: not working properly
 " E486: Pattern not found: .
 " E492: Not an editor command: $)<CR>

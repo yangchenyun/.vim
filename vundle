@@ -37,6 +37,7 @@ Bundle "Align"
 Bundle "tpope/vim-unimpaired"
 Bundle "laktek/distraction-free-writing-vim"
 Bundle "tpope/vim-abolish"
+Bundle "tpope/vim-repeat"
 Bundle "Syntastic"
 
 " auto-completion & snippets
@@ -63,4 +64,4 @@ Bundle "bufexplorer.zip"
 
 " git and github
 Bundle "mattn/gist-vim"
-Bundle "tpope/vim-fugitive"
+Bundle "yangchenyun/vim-fugitive"

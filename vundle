@@ -24,6 +24,7 @@ Bundle "closetag.vim"
 
   " StyleSheets
 Bundle "groenewege/vim-less"
+Bundle "wavded/vim-stylus"
 
   " Rdoc
 Bundle "RDoc"

@@ -133,3 +133,6 @@ nmap <leader>dj :silent !open dash://javascript:<cword><cr>
 nmap <leader>drb :silent !open dash://ruby:<cword><cr>
 nmap <leader>dra :silent !open dash://rails:<cword><cr>
 
+"========== Use Ag - an Ack Replacement  ==========
+let g:ackprg = 'ag --nogroup --nocolor --column'
+

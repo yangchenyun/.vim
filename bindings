@@ -159,9 +159,9 @@ map <Down> gj
 nmap <F4> :set invpaste<CR>:set paste?<CR> 
 
 " shortcuts for diffget, diffput and diffupdate
-map <leader>dp :diffput<cr>
-map <leader>dg :diffget<cr>
-map <leader>du :diffupdate<cr>
+map <leader>dfp :diffput<cr>
+map <leader>dfg :diffget<cr>
+map <leader>dfu :diffupdate<cr>
 
 " toggle QuickFix List
 map <silent> <leader>m :QFix<cr>

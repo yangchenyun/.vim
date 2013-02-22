@@ -32,6 +32,9 @@ Bundle "RDoc"
   " Jade
 Bundle 'digitaltoad/vim-jade'
 
+  " XQuery
+Bundle 'jeroenp/vim-xquery-syntax'
+
 " editing
 Bundle "scrooloose/nerdcommenter"
 Bundle "Align"

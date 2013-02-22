@@ -30,3 +30,4 @@ source $HOME/.vim/window
 source $HOME/.vim/editing
 source $HOME/.vim/filetypes
 source $HOME/.vim/plugins
+source $HOME/.vim/utils

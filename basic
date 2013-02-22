@@ -90,3 +90,6 @@ set tm=500
 
 " When vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/.vim/vimrc
+
+" setup the bash manually
+set shell=/bin/bash

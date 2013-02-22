@@ -136,3 +136,6 @@ nmap <leader>dra :silent !open dash://rails:<cword><cr>
 "========== Use Ag - an Ack Replacement  ==========
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
+"========== Use Dbext Profile  ==========
+let g:dbext_default_profile_mysql  = 'type=MYSQL:user=yangchenyun:passwd=3CTszAjyDMpBnFtYsf4tFq'
+let g:dbext_default_profile = 'mysql'

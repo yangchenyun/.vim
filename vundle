@@ -36,7 +36,7 @@ Bundle 'digitaltoad/vim-jade'
 Bundle "scrooloose/nerdcommenter"
 Bundle "Align"
 Bundle "tpope/vim-unimpaired"
-Bundle "laktek/distraction-free-writing-vim"
+" Bundle "laktek/distraction-free-writing-vim"
 Bundle "tpope/vim-abolish"
 Bundle "tpope/vim-repeat"
 Bundle "Syntastic"

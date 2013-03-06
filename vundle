@@ -4,6 +4,7 @@ Bundle "tomtom/tlib_vim"
 Bundle "mattn/webapi-vim"
 Bundle "Lokaltog/vim-powerline"
 Bundle "TailMinusF"
+Bundle "AnsiEsc.vim"
 Bundle "dbext.vim"
 
 " language support
@@ -69,3 +70,4 @@ Bundle "bufexplorer.zip"
 " git and github
 Bundle "mattn/gist-vim"
 Bundle "yangchenyun/vim-fugitive"
+Bundle "airblade/vim-gitgutter"

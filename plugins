@@ -50,6 +50,7 @@ set tags+=~/.vim/tags/*
 let NERDTreeShowHidden = 1
 " open NERDTree on CWD
 map <leader>f :NERDTreeToggle%:p:h<cr>
+map <leader>r :NERDTreeFind<cr>
 
 "==========NERDCommenter ==========
 
@@ -139,3 +140,30 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 "========== Use Dbext Profile  ==========
 let g:dbext_default_profile_mysql  = 'type=MYSQL:user=yangchenyun:passwd=3CTszAjyDMpBnFtYsf4tFq'
 let g:dbext_default_profile = 'mysql'
+
+"========== TagBar  ==========
+nmap <F8> :TagbarToggle<cr>
+if executable('coffeetags')
+  let g:tagbar_type_coffee = {
+        \ 'ctagsbin' : 'coffeetags',
+        \ 'ctagsargs' : '',
+        \ 'kinds' : [
+        \ 'f:functions',
+        \ 'o:object',
+        \ ],
+        \ 'sro' : ".",
+        \ 'kind2scope' : {
+        \ 'f' : 'object',
+        \ 'o' : 'object',
+        \ }
+        \ }
+endif
+
+let g:tagbar_type_markdown = {
+  \ 'ctagstype' : 'markdown',
+  \ 'kinds' : [
+    \ 'h:Heading_L1',
+    \ 'i:Heading_L2',
+    \ 'k:Heading_L3'
+  \ ]
+\ }

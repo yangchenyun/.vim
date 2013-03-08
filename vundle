@@ -4,8 +4,10 @@ Bundle "tomtom/tlib_vim"
 Bundle "mattn/webapi-vim"
 Bundle "Lokaltog/vim-powerline"
 Bundle "TailMinusF"
+Bundle "AutoTag"
 Bundle "AnsiEsc.vim"
 Bundle "dbext.vim"
+Bundle "majutsushi/tagbar"
 
 " language support
   " Ruby

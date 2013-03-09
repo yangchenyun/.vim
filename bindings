@@ -89,7 +89,7 @@ map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
 
 " When pressing <leader>cd switch to the directory of the open buffer
-map <leader>cd :cd %:p:h<cr>
+" map <leader>cd :cd %:p:h<cr>
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
@@ -136,7 +136,7 @@ map <leader>ev :vsp %%
 map <leader>es :sp %%
 map <leader>ew :e %%
 map <leader>md :!mkdir -p %:p:h<CR>
-map <leader>cd :lcd %:h<CR>
+" map <leader>cd :lcd %:h<CR>
 
 "toggles wrap
 nmap <leader>tw :set invwrap<CR>:set wrap?<CR>

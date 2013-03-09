@@ -155,3 +155,7 @@ let g:tagbar_type_markdown = {
     \ 'k:Heading_L3'
   \ ]
 \ }
+
+"========== Vim Root  ==========
+let g:rooter_patterns = ['tags', 'Rakefile', 'MIT-LICENSE', '.git/', '.travis.yml', 'Gemfile', '*.gemspec']
+let g:rooter_use_lcd = 1

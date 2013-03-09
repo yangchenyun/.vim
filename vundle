@@ -8,6 +8,7 @@ Bundle "AutoTag"
 Bundle "AnsiEsc.vim"
 Bundle "dbext.vim"
 Bundle "majutsushi/tagbar"
+Bundle "airblade/vim-rooter"
 
 " language support
   " Ruby

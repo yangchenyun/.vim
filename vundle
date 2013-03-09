@@ -13,6 +13,7 @@ Bundle "majutsushi/tagbar"
   " Ruby
 Bundle "vim-ruby/vim-ruby"
 Bundle "tpope/vim-rails"
+Bundle "tpope/vim-rake"
 Bundle "tpope/vim-bundler"
 
   " javaScript

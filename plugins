@@ -35,10 +35,43 @@ set grepprg=/bin/grep\ -nH
 
 "==========NERDTree ==========
 
+function! ToggleNERDTree()
+    " Detect which plugins are open
+    if exists('t:NERDTreeBufName')
+        let nerdtree_open = bufwinnr(t:NERDTreeBufName) != -1
+    else
+        let nerdtree_open = 0
+    endif
+
+    " Perform the appropriate action
+    if nerdtree_open
+        NERDTreeClose
+    else
+        NERDTree
+    endif
+endfunction
+
+function! ToggleNERDTreeFind()
+    " Detect which plugins are open
+    if exists('t:NERDTreeBufName')
+        let nerdtree_open = bufwinnr(t:NERDTreeBufName) != -1
+    else
+        let nerdtree_open = 0
+    endif
+
+    " Perform the appropriate action
+    if nerdtree_open
+        NERDTreeClose
+    else
+        NERDTreeFind
+    endif
+endfunction
+
 let NERDTreeShowHidden = 1
 " open NERDTree on CWD
-map <leader>f :NERDTreeToggle%:p:h<cr>
-map <leader>r :NERDTreeFind<cr>
+" map <leader>f :NERDTreeToggle%:p:h<cr>
+map <leader>f :call ToggleNERDTree()<cr>
+map <leader>r :call ToggleNERDTreeFind()<cr>
 
 "==========NERDCommenter ==========
 

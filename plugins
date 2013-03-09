@@ -33,18 +33,6 @@ autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako so ~/.vim/bundle
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/bin/grep\ -nH
 
-"==========Tag List ==========
-
-let Tlist_Sort_Type = "name"
-let Tlist_Show_Menu = 1
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_Show_One_File = 1
-let Tlist_Use_SingleClick = 1
-map <leader>t :Tlist<cr>
-map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-
-set tags+=~/.vim/tags/*
-
 "==========NERDTree ==========
 
 let NERDTreeShowHidden = 1

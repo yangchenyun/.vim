@@ -192,3 +192,27 @@ let g:tagbar_type_markdown = {
 "========== Vim Root  ==========
 let g:rooter_patterns = ['tags', 'Rakefile', 'MIT-LICENSE', '.git/', '.travis.yml', 'Gemfile', '*.gemspec']
 let g:rooter_use_lcd = 1
+
+"========== Conque Shell  ==========
+let g:ConqueTerm_Color = 0
+let g:ConqueTerm_FastMode = 1
+
+function MyConqueStartup(term)
+
+    " set buffer syntax using the name of the program currently running
+    let syntax_associations = { 'ipython': 'python', 'irb': 'ruby', 'pry': 'ruby' }
+
+    if has_key(syntax_associations, a:term.program_name)
+      execute 'setlocal syntax=' . syntax_associations[a:term.program_name]
+    else
+      execute 'setlocal syntax=' . a:term.program_name
+    endif
+
+    " init fish instead for faster experience
+    if a:term.program_name == 'bash'
+      call a:term.writeln('fish')
+    endif
+    
+endfunction
+
+call conque_term#register_function('after_startup', 'MyConqueStartup')

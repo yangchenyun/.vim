@@ -8,6 +8,7 @@ Bundle "AnsiEsc.vim"
 Bundle "dbext.vim"
 Bundle "airblade/vim-rooter"
 Bundle "yangchenyun/Conque-Shell"
+Bundle "Vicle"
 
 " tags
 Bundle "majutsushi/tagbar"

@@ -216,3 +216,9 @@ function MyConqueStartup(term)
 endfunction
 
 call conque_term#register_function('after_startup', 'MyConqueStartup')
+
+"========== Slimv Setup  ==========
+let g:slimv_repl_split = 4 " Vertical right split buffer for output"
+let g:slimv_leader = ",l"
+let g:scheme_builtin_swank = 1
+let g:lisp_rainbow=1

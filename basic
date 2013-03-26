@@ -93,3 +93,6 @@ autocmd! bufwritepost vimrc source ~/.vim/vimrc
 
 " setup the bash manually
 set shell=/bin/bash
+
+" detect mouse usage, avoid selection on linenumbers
+set mouse=a

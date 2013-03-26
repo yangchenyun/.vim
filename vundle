@@ -81,4 +81,3 @@ Bundle "bufexplorer.zip"
 " git and github
 Bundle "mattn/gist-vim"
 Bundle "yangchenyun/vim-fugitive"
-Bundle "airblade/vim-gitgutter"

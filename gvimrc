@@ -6,7 +6,7 @@ let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
-set background=light
+set background=dark
 colorscheme solarized
 set mouse=a                 " use mouse when possible
 set guifont=Menlo\ Regular:h12

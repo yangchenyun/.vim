@@ -34,7 +34,7 @@ elseif MySys() == "linux"
 endif
 
 "colorscheme wombat256
-set background=light
+set background=dark
 let g:solarized_termcolors=256
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"

@@ -150,10 +150,12 @@ let g:fugitive_github_domains = ['http://git.zenhacks.org']
 let g:fugitive_gitlab_engine = '1'
 
 "========== Dash Interface ==========
-nmap <leader>dn :silent !open dash://nodejs:<cword><cr>
-nmap <leader>dj :silent !open dash://javascript:<cword><cr>
-nmap <leader>drb :silent !open dash://ruby:<cword><cr>
-nmap <leader>dra :silent !open dash://rails:<cword><cr>
+nmap <silent> <leader>d <Plug>DashSearch
+let g:dash_map = {
+        \ 'ruby'       : 'ruby rails',
+        \ 'python'     : 'python2',
+        \ 'javascript' : 'javascript jquery underscore'
+        \ }
 
 "========== Use Ag - an Ack Replacement  ==========
 let g:ackprg = 'ag --nogroup --nocolor --column'

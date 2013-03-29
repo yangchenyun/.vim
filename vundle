@@ -23,6 +23,7 @@ Bundle "vim-ruby/vim-ruby"
 Bundle "tpope/vim-rails"
 Bundle "tpope/vim-rake"
 Bundle "tpope/vim-bundler"
+Bundle "skwp/vim-rspec"
 
   " javaScript
 Bundle "vim-coffee-script"

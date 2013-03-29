@@ -9,6 +9,8 @@ Bundle "dbext.vim"
 Bundle "airblade/vim-rooter"
 Bundle "yangchenyun/Conque-Shell"
 Bundle "Vicle"
+" required by dash and greper
+Bundle 'rizzatti/funcoo.vim'
 
 " tags
 Bundle "majutsushi/tagbar"
@@ -71,8 +73,9 @@ Bundle "scrooloose/nerdtree"
 Bundle "kien/ctrlp.vim"
 Bundle "ZoomWin"
 Bundle "xolox/vim-session"
-Bundle "mileszs/ack.vim"
 Bundle "ervandew/supertab"
+Bundle 'rizzatti/greper.vim'
+Bundle 'rizzatti/dash.vim'
 
 " file nav
 Bundle "Lokaltog/vim-easymotion"
@@ -82,6 +85,3 @@ Bundle "bufexplorer.zip"
 " git and github
 Bundle "mattn/gist-vim"
 Bundle "yangchenyun/vim-fugitive"
-
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'

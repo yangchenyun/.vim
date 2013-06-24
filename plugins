@@ -224,3 +224,8 @@ let g:slimv_repl_split = 4 " Vertical right split buffer for output"
 let g:slimv_leader = ",l"
 let g:scheme_builtin_swank = 1
 let g:lisp_rainbow=1
+
+"========== CSupport ==========
+let g:C_MapLeader  = ','
+let g:C_CCompiler  = 'cc'
+let g:C_ExeExtension = '.out'

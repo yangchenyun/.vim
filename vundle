@@ -37,6 +37,10 @@ Bundle "tpope/vim-markdown"
 Bundle "juvenn/mustache.vim"
 Bundle "closetag.vim"
 
+  " C/C++
+Bundle "c.vim"
+Bundle "a.vim"
+
   " StyleSheets
 Bundle "groenewege/vim-less"
 Bundle "wavded/vim-stylus"

@@ -147,7 +147,6 @@ call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 " auto delete the fugitive object buff
 autocmd BufReadPost fugitive://* set bufhidden=delete
 let g:fugitive_github_domains = ['http://git.zenhacks.org']
-let g:fugitive_gitlab_engine = '1'
 
 "========== Dash Interface ==========
 nmap <silent> <leader>d <Plug>DashSearch

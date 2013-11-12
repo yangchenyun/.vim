@@ -156,12 +156,13 @@ let g:dash_map = {
         \ 'javascript' : 'javascript jquery underscore'
         \ }
 
-"========== Use Ag - an Ack Replacement  ==========
-let g:ackprg = 'ag --nogroup --nocolor --column'
+"========== Use Greper with Ag ==========
+nmap <silent> <leader>a <Plug>GreperWord
 
 "========== Use Dbext Profile  ==========
 let g:dbext_default_profile_mysql  = 'type=MYSQL:user=yangchenyun:passwd=3CTszAjyDMpBnFtYsf4tFq'
 let g:dbext_default_profile = 'mysql'
+let g:dbext_default_SQLITE_bin = 'sqlite3'
 
 "========== TagBar  ==========
 nmap <F8> :TagbarToggle<cr>
@@ -193,6 +194,9 @@ let g:tagbar_type_markdown = {
 "========== Vim Root  ==========
 let g:rooter_patterns = ['tags', 'Rakefile', 'MIT-LICENSE', '.git/', '.travis.yml', 'Gemfile', '*.gemspec']
 let g:rooter_use_lcd = 1
+
+"========== Syntastic  ==========
+let g:syntastic_ruby_mri_args="-w"
 
 "========== Conque Shell  ==========
 let g:ConqueTerm_Color = 0
@@ -228,3 +232,9 @@ let g:lisp_rainbow=1
 let g:C_MapLeader  = ','
 let g:C_CCompiler  = 'cc'
 let g:C_ExeExtension = '.out'
+
+"========== javaScript Lib ==========
+let g:used_javascript_libs = 'jquery,angularjs,underscore,backbone'
+
+"========== SQL ==========
+let g:sql_type_default = 'pgsql'

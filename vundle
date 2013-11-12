@@ -30,9 +30,11 @@ Bundle "skwp/vim-rspec"
   " javaScript
 Bundle "vim-coffee-script"
 Bundle "pangloss/vim-javascript"
+Bundle "othree/javascript-libraries-syntax.vim"
 
   " HTML
 Bundle "tpope/vim-haml"
+Bundle "slim-template/vim-slim"
 Bundle "tpope/vim-markdown"
 Bundle "juvenn/mustache.vim"
 Bundle "closetag.vim"
@@ -54,6 +56,10 @@ Bundle 'digitaltoad/vim-jade'
   " XQuery
 Bundle 'jeroenp/vim-xquery-syntax'
 
+  " SQL
+Bundle 'sql.vim'
+Bundle 'exu/pgsql.vim'
+
 " editing
 Bundle "scrooloose/nerdcommenter"
 Bundle "Align"
@@ -62,6 +68,7 @@ Bundle "tpope/vim-unimpaired"
 Bundle "tpope/vim-abolish"
 Bundle "tpope/vim-repeat"
 Bundle "Syntastic"
+Bundle "SyntaxComplete"
 
 " auto-completion & snippets
 Bundle "honza/snipmate-snippets"

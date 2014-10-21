@@ -18,7 +18,17 @@ Bundle "AutoTag"
 
 " language support
   " Lisp
-Bundle "slimv.vim"
+Bundle "slimv.vim" 
+" Bundle "wlangstroth/vim-racket"
+Bundle "guns/vim-sexp"
+Bundle "tpope/vim-sexp-mappings-for-regular-people"
+
+  " Clojure
+Bundle "guns/vim-clojure-static"
+Bundle "tpope/vim-fireplace"
+Bundle "tpope/vim-projectionist"
+Bundle "tpope/vim-leiningen"
+Bundle "tpope/vim-dispatch"
 
   " Ruby
 Bundle "vim-ruby/vim-ruby"
@@ -27,10 +37,17 @@ Bundle "tpope/vim-rake"
 Bundle "tpope/vim-bundler"
 Bundle "skwp/vim-rspec"
 
+  " Python
+Bundle "klen/python-mode"
+Bundle "davidhalter/jedi-vim"
+
   " javaScript
 Bundle "vim-coffee-script"
 Bundle "pangloss/vim-javascript"
 Bundle "othree/javascript-libraries-syntax.vim"
+
+  " Java
+Bundle "cup.vim"
 
   " HTML
 Bundle "tpope/vim-haml"
@@ -59,6 +76,10 @@ Bundle 'jeroenp/vim-xquery-syntax'
   " SQL
 Bundle 'sql.vim'
 Bundle 'exu/pgsql.vim'
+
+  " PHP
+Bundle "spf13/PIV"
+Bundle "vim-php/tagbar-phpctags.vim"
 
 " editing
 Bundle "scrooloose/nerdcommenter"

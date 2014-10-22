@@ -18,12 +18,14 @@
 " load up everything in ~/.vim/bundle using pathogen.vim
 set nocp
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-
+Plugin 'gmarik/vundle'
 source $HOME/.vim/vundle
+call vundle#end()
+filetype plugin indent on
+
 source $HOME/.vim/basic
 source $HOME/.vim/bindings
 source $HOME/.vim/window

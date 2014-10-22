@@ -1,119 +1,117 @@
 " utils
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "mattn/webapi-vim"
-Bundle "Lokaltog/vim-powerline"
-Bundle "TailMinusF"
-Bundle "AnsiEsc.vim"
-Bundle "dbext.vim"
-Bundle "airblade/vim-rooter"
-Bundle "yangchenyun/Conque-Shell"
-Bundle "Vicle"
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'mattn/webapi-vim'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'TailMinusF'
+Plugin 'AnsiEsc.vim'
+Plugin 'dbext.vim'
+Plugin 'airblade/vim-rooter'
+Plugin 'yangchenyun/Conque-Shell'
+Plugin 'Vicle'
 " required by dash and greper
-Bundle 'rizzatti/funcoo.vim'
+Plugin 'rizzatti/funcoo.vim'
 
 " tags
-Bundle "majutsushi/tagbar"
-Bundle "AutoTag"
+Plugin 'majutsushi/tagbar'
+Plugin 'AutoTag'
 
 " language support
-  " Lisp
-Bundle "slimv.vim" 
-" Bundle "wlangstroth/vim-racket"
-Bundle "guns/vim-sexp"
-Bundle "tpope/vim-sexp-mappings-for-regular-people"
+" Lisp
+Plugin 'slimv.vim' 
+Plugin 'guns/vim-sexp'
+Plugin 'tpope/vim-sexp-mappings-for-regular-people'
 
-  " Clojure
-Bundle "guns/vim-clojure-static"
-Bundle "tpope/vim-fireplace"
-Bundle "tpope/vim-projectionist"
-Bundle "tpope/vim-leiningen"
-Bundle "tpope/vim-dispatch"
+" Clojure
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-projectionist'
+Plugin 'tpope/vim-leiningen'
+Plugin 'tpope/vim-dispatch'
 
-  " Ruby
-Bundle "vim-ruby/vim-ruby"
-Bundle "tpope/vim-rails"
-Bundle "tpope/vim-rake"
-Bundle "tpope/vim-bundler"
-Bundle "skwp/vim-rspec"
+" Ruby
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rake'
+Plugin 'tpope/vim-bundler'
+Plugin 'skwp/vim-rspec'
 
-  " Python
-Bundle "klen/python-mode"
-Bundle "davidhalter/jedi-vim"
+" Python
+Plugin 'klen/python-mode'
+Plugin 'davidhalter/jedi-vim'
 
-  " javaScript
-Bundle "vim-coffee-script"
-Bundle "pangloss/vim-javascript"
-Bundle "othree/javascript-libraries-syntax.vim"
+" javaScript
+Plugin 'vim-coffee-script'
+Plugin 'pangloss/vim-javascript'
+Plugin 'othree/javascript-libraries-syntax.vim'
 
-  " Java
-Bundle "cup.vim"
+" Java
+Plugin 'cup.vim'
 
-  " HTML
-Bundle "tpope/vim-haml"
-Bundle "slim-template/vim-slim"
-Bundle "tpope/vim-markdown"
-Bundle "juvenn/mustache.vim"
-Bundle "closetag.vim"
+" HTML
+Plugin 'tpope/vim-haml'
+Plugin 'slim-template/vim-slim'
+Plugin 'tpope/vim-markdown'
+Plugin 'juvenn/mustache.vim'
+Plugin 'closetag.vim'
 
-  " C/C++
-Bundle "c.vim"
-Bundle "a.vim"
+" C/C++
+Plugin 'c.vim'
+Plugin 'a.vim'
 
-  " StyleSheets
-Bundle "groenewege/vim-less"
-Bundle "wavded/vim-stylus"
+" StyleSheets
+Plugin 'groenewege/vim-less'
+Plugin 'wavded/vim-stylus'
 
-  " Rdoc
-Bundle "RDoc"
+" Rdoc
+Plugin 'RDoc'
 
-  " Jade
-Bundle 'digitaltoad/vim-jade'
+" Jade
+Plugin 'digitaltoad/vim-jade'
 
-  " XQuery
-Bundle 'jeroenp/vim-xquery-syntax'
+" XQuery
+Plugin 'jeroenp/vim-xquery-syntax'
 
-  " SQL
-Bundle 'sql.vim'
-Bundle 'exu/pgsql.vim'
+" SQL
+Plugin 'sql.vim'
+Plugin 'exu/pgsql.vim'
 
-  " PHP
-Bundle "spf13/PIV"
-Bundle "vim-php/tagbar-phpctags.vim"
+" PHP
+Plugin 'spf13/PIV'
+Plugin 'vim-php/tagbar-phpctags.vim'
 
 " editing
-Bundle "scrooloose/nerdcommenter"
-Bundle "Align"
-Bundle "tpope/vim-unimpaired"
-" Bundle "laktek/distraction-free-writing-vim"
-Bundle "tpope/vim-abolish"
-Bundle "tpope/vim-repeat"
-Bundle "Syntastic"
-Bundle "SyntaxComplete"
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'Align'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-abolish'
+Plugin 'tpope/vim-repeat'
+Plugin 'Syntastic'
+Plugin 'SyntaxComplete'
 
 " auto-completion & snippets
-Bundle "honza/snipmate-snippets"
-Bundle "garbas/vim-snipmate"
-Bundle "tpope/vim-surround"
-Bundle "Raimondi/delimitMate"
-Bundle "matchit.zip"
-Bundle "mattn/zencoding-vim"
-Bundle "tpope/vim-endwise"
+Plugin 'honza/snipmate-snippets'
+Plugin 'garbas/vim-snipmate'
+Plugin 'tpope/vim-surround'
+Plugin 'Raimondi/delimitMate'
+Plugin 'matchit.zip'
+Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-endwise'
 
 " doc nav
-Bundle "scrooloose/nerdtree"
-Bundle "kien/ctrlp.vim"
-Bundle "ZoomWin"
-Bundle "xolox/vim-session"
-Bundle "ervandew/supertab"
-Bundle 'rizzatti/greper.vim'
-Bundle 'rizzatti/dash.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ZoomWin'
+Plugin 'xolox/vim-session'
+Plugin 'ervandew/supertab'
+Plugin 'rizzatti/greper.vim'
+Plugin 'rizzatti/dash.vim'
 
 " file nav
-Bundle "Lokaltog/vim-easymotion"
-Bundle "jeetsukumaran/vim-buffergator"
-Bundle "bufexplorer.zip"
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'bufexplorer.zip'
 
 " git and github
-Bundle "mattn/gist-vim"
-Bundle "tpope/vim-fugitive"
+Plugin 'mattn/gist-vim'
+Plugin 'tpope/vim-fugitive'
